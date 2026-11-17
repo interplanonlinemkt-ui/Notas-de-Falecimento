@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gerador de Comunicado de Despedida · Interplan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="topbar">
+  <div class="wrap">
+    <span><b>Dúvidas, sugestões ou evoluções?</b> Fale com o departamento de Marketing.</span>
+    <a class="pill-wa" href="https://wa.me/5518997330972" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="#75BF00" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm5.8 14.03c-.24.68-1.42 1.31-1.95 1.36-.5.05-.97.23-3.27-.68-2.77-1.09-4.53-3.93-4.67-4.11-.13-.18-1.11-1.48-1.11-2.83 0-1.34.7-2 .95-2.28.25-.27.54-.34.72-.34h.52c.17 0 .39-.06.61.47.24.56.79 1.92.86 2.06.07.14.11.3.02.48-.09.18-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.27.71 1.17 1.52 1.89 1.04.93 1.92 1.22 2.19 1.35.27.14.43.11.59-.07.16-.18.68-.8.86-1.07.18-.27.36-.23.61-.14.25.09 1.59.75 1.86.89.27.14.45.2.52.32.07.11.07.66-.17 1.33z"/></svg>
+      18 | 99733-0972
+    </a>
+  </div>
+</div>
+<nav class="nav">
+  <div class="wrap">
+    <div>
+      <img class="logo" src="assets/logo-verde.png" alt="Interplan">
+    </div>
+    <div class="nav-links">
+      <button type="button" class="wide" data-modal="mComo">Como utilizar</button>
+      <button type="button" data-modal="mDuvidas">Dúvidas</button>
+      <button type="button" data-modal="mContato">Contato</button>
+    </div>
+  </div>
+  <div class="wrap titlebar">
+    <h1 class="page-title">Gerador de Comunicado de Despedida</h1>
+    <p class="page-sub">Preencha os dados, confira a prévia e baixe a arte nos três formatos.</p>
+  </div>
+</nav>
+
+<main>
+  <section class="card form" aria-label="Dados do comunicado">
+    <h2>Foto</h2>
+    <div class="drop" id="drop" tabindex="0">
+      <strong>Clique para enviar</strong> ou arraste a foto aqui<br><small>JPG ou PNG</small>
+    </div>
+    <input type="file" id="file" accept="image/*" hidden>
+    <div class="photo-tools" id="photoTools">
+      <label for="zoom">Zoom</label>
+      <input type="range" id="zoom" min="1" max="3" step="0.01" value="1">
+      <label class="check"><input type="checkbox" id="pb"> Foto em preto e branco</label>
+      <p class="hint">Arraste a foto na prévia para ajustar o enquadramento.</p>
+    </div>
+
+    <h2>Falecido(a)</h2>
+    <label for="nome">Nome</label>
+    <input type="text" id="nome" maxlength="60" placeholder="Ex.: Maria Aparecida Souza">
+    <div class="row">
+      <div><label for="nasc">Nascimento</label><input type="date" id="nasc"></div>
+      <div><label for="falec">Falecimento</label><input type="date" id="falec"></div>
+    </div>
+    <div class="err" id="errDatas"></div>
+
+    <h2>Velório</h2>
+    <label>Local</label>
+    <div class="picker" id="velPicker"></div>
+    <div class="row3">
+      <div><label for="velData">Data</label><input type="date" id="velData"></div>
+      <div><label for="velIni">Início</label><input type="time" id="velIni"></div>
+      <div><label for="velFim">Término</label><input type="time" id="velFim"></div>
+    </div>
+
+    <h2>Sepultamento</h2>
+    <label class="check"><input type="checkbox" id="mesmoLocal"> Mesmo local do velório</label>
+    <div id="sepPickerWrap">
+      <label>Local</label>
+      <div class="picker" id="sepPicker"></div>
+    </div>
+    <div class="row">
+      <div><label for="sepData">Data</label><input type="date" id="sepData"></div>
+      <div><label for="sepHora">Horário</label><input type="time" id="sepHora"></div>
+    </div>
+  </section>
+
+  <section class="preview" aria-label="Prévia">
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" data-fmt="feed" aria-selected="true">Feed <small>1080×1350</small></button>
+      <button class="tab" role="tab" data-fmt="story" aria-selected="false">Story <small>1080×1920</small></button>
+      <button class="tab" role="tab" data-fmt="wide" aria-selected="false">Horizontal <small>1200×628</small></button>
+    </div>
+    <div class="canvas-wrap"><canvas id="cv" width="1080" height="1350"></canvas></div>
+    <div class="actions">
+      <button class="primary" id="btnAll">Baixar os 3 formatos (.zip)</button>
+      <button class="ghost" id="btnPng">Só este (PNG)</button>
+      <button class="ghost" id="btnJpg">Só este (JPG)</button>
+      <button class="ghost" id="btnLimpar">Limpar</button>
+    </div>
+    <div class="status" id="status"></div>
+    <div class="fallback" id="fallback">
+      <div class="imgs" id="fallbackImgs"></div>
+      <p>Clique com o botão direito (ou segure no celular) em cada imagem e escolha “Salvar imagem”.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap cols">
+    <div>
+      <div class="flogo"><img src="assets/logo-branco.png" alt="Interplan"><div class="tagline">ao seu lado em todos os momentos</div></div>
+      <div class="company">Interplan Dearo Empreendimentos Funerarios LTDA<br>CNPJ: 27.319.783/0001-27</div>
+      <div class="contact">
+        <a href="tel:+551832265050">(18) 3226-5050</a><br>
+        <a href="mailto:sac@interplanonline.com.br">sac@interplanonline.com.br</a><br>
+        <a href="https://interplanonline.com.br" target="_blank" rel="noopener">interplanonline.com.br</a>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div>
+      <div class="social">
+        <a data-social="instagram" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.58.01 4.85.07 3.25.15 4.77 1.69 4.92 4.92.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.15 3.23-1.66 4.77-4.92 4.92-1.27.06-1.64.07-4.85.07s-3.58-.01-4.85-.07c-3.26-.15-4.77-1.7-4.92-4.92C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85C2.42 3.92 3.94 2.37 7.15 2.27 8.42 2.21 8.8 2.2 12 2.2zm0 4.86a4.94 4.94 0 100 9.88 4.94 4.94 0 000-9.88zm0 8.15a3.21 3.21 0 110-6.42 3.21 3.21 0 010 6.42zm5.14-9.5a1.15 1.15 0 100 2.3 1.15 1.15 0 000-2.3z"/></svg></a>
+        <a data-social="facebook" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8.5V6.6c0-.85.2-1.3 1.53-1.3H17V2.2h-2.6C11.2 2.2 10 3.7 10 6.2v2.3H7.6v3.1H10V22h4v-10.4h2.67l.36-3.1H14z"/></svg></a>
+        <a data-social="tiktok" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16.6 2h-3.3v13.4a2.9 2.9 0 11-2.9-2.9c.28 0 .55.04.8.11V9.2a6.3 6.3 0 00-.8-.05A6.3 6.3 0 1016.7 15.4V8.6a8 8 0 004.7 1.5V6.8A4.7 4.7 0 0116.6 2z"/></svg></a>
+      </div>
+      <p class="note">Ferramenta interna da Interplan para padronizar os comunicados de despedida. Confira nome, datas, locais e horários com a família antes de publicar.</p>
+    </div>
+  </div>
+  <div class="copy">Copyright © 2026 - Interplan • Todos os direitos reservados</div>
+</footer>
+
+<div class="modal" id="mComo" role="dialog" aria-modal="true"><div class="box"><button class="x" type="button" aria-label="Fechar">×</button>
+  <h3>Como utilizar</h3>
+  <ol>
+    <li><b>Envie a foto</b> e ajuste o enquadramento arrastando a imagem na prévia (use o zoom se precisar).</li>
+    <li>Preencha <b>nome</b> e <b>datas</b> de nascimento e falecimento.</li>
+    <li>No <b>velório</b> e no <b>sepultamento</b>, busque o local pelo nome ou pela cidade e escolha na lista. Se não encontrar, use “local não cadastrado” e digite nome, endereço e cidade.</li>
+    <li>Confira a prévia nas abas <b>Feed</b>, <b>Story</b> e <b>Horizontal</b>.</li>
+    <li>Clique em <b>Baixar os 3 formatos</b> para receber um .zip com as três artes, ou baixe só o formato aberto.</li>
+  </ol>
+</div></div>
+<div class="modal" id="mDuvidas" role="dialog" aria-modal="true"><div class="box"><button class="x" type="button" aria-label="Fechar">×</button>
+  <h3>Dúvidas</h3>
+  <dl>
+    <dt>O botão de baixar está desativado.</dt><dd>Algum campo obrigatório está faltando ou há datas incoerentes. A mensagem abaixo da prévia mostra o que falta.</dd>
+    <dt>Não encontrei o cemitério ou velório.</dt><dd>Use “local não cadastrado” e preencha os dados. Avise o Marketing para incluirmos o local na lista.</dd>
+    <dt>O nome ficou pequeno na arte.</dt><dd>Nomes muito longos são reduzidos automaticamente para caber. Se preferir, use o nome como a família costuma chamar.</dd>
+    <dt>A foto ficou cortada.</dt><dd>Arraste a foto na prévia e ajuste o zoom. O enquadramento vale para os três formatos.</dd>
+  </dl>
+</div></div>
+<div class="modal" id="mContato" role="dialog" aria-modal="true"><div class="box"><button class="x" type="button" aria-label="Fechar">×</button>
+  <h3>Contato</h3>
+  <p style="margin:0 0 12px;line-height:1.6">Dúvidas, sugestões ou evoluções? Fale com o departamento de Marketing.</p>
+  <p style="margin:0;line-height:1.9">WhatsApp: <a href="https://wa.me/5518997330972" target="_blank" rel="noopener">(18) 99733-0972</a><br>SAC: (18) 3226-5050<br>E-mail: sac@interplanonline.com.br</p>
+</div></div>
+
+<script src="js/config.js"></script>
+<script src="js/logo-data.js"></script>
+<script src="js/locais.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
