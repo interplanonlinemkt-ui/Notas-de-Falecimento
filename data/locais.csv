@@ -1,45 +1,272 @@
 ﻿Categoria;Cidade;UF;Nome;Endereço;CEP;Observações / Horário
-Unidade Interplan;Presidente Prudente;SP;Interplan - Casa de Velório;Av. da Saudade, 1471 – Cidade Universitária;19050-310;Atendimento 24 horas
-Unidade Interplan;Presidente Prudente;SP;Interplan Escritório Presidente Prudente;Av. Cel. José Soares Marcondes, 1942 – Centro;19010-082;Escritório administrativo e atendimento comercial
-Unidade Interplan;Pirapozinho;SP;Interplan - Casa de Velório Pirapozinho;R. Tiradentes, 306 – Centro;19200-053;Atendimento 24 horas
-Unidade Interplan;Martinópolis;SP;Funerária Interplan (Escritório e Casa de Velório);Av. Cel. João Gomes Martins, 334 – Centro (Casa de Velório na R. José Maria Sanches, 190 – Centro);19500-000;Ao lado da Santa Casa
-Unidade Interplan;Rancharia;SP;Casa de Velório Interplan;Av. Comendador Pedro Ferreira Doninho, 254 – Jardim Primavera;19600-000;Atendimento 24 horas
-Unidade Interplan;Rancharia;SP;Funerária Interplan (Escritório);Av. Dom Pedro II, 1420 – Vila Cantizani;19600-000;Escritório
-Velório Municipal;Presidente Prudente;SP;Velório Municipal de Presidente Prudente (anexo ao Cemitério São João Batista);R. José Bongiovani, 975 – Vila Liberdade;19025-812;Salas municipais anexas ao cemitério
-Casa de Velório;Presidente Prudente;SP;Grupo Athia - Casa de Velório;R. Emílio Trevisan, 1011 – Jardim Bela Daria;19013-200;Atendimento 24 horas
-Casa de Velório;Presidente Prudente;SP;Funerária Prudentina;Av. Cel. José Soares Marcondes – Vila Euclides;19010-082;Atendimento 24 horas
-Casa de Velório;Álvares Machado;SP;Grupo Athia Álvares Machado - Casa de Velório;R. Oxalá, 168;19160-000;Atendimento 24 horas
-Velório Municipal;Pirapozinho;SP;Velório Municipal de Pirapozinho;Av. Washington Luiz, s/n;19200-000;Anexo ao Cemitério Municipal
-Casa de Velório;Regente Feijó;SP;Casa de Velório Funerária Regente;Av. José Bonifácio, 1001 – Centro;19570-000;
-Casa de Velório;Martinópolis;SP;Grupo PAF - Socimart / Organização Funerária Martinópolis;Av. Padre João Schneider, 31 – Centro;19500-000;
-Velório Municipal;Martinópolis;SP;Velório Municipal (Distrito de Guachos);Av. Ourinhos, 391 – Guachos;19500-000;Distrito de Guachos
-Velório Municipal;Rancharia;SP;Velório Municipal de Rancharia;R. Jorge Custódio de Souza, 266 – Jardim Primavera;19600-000;Anexo ao Cemitério Municipal
-Velório Municipal;Assis;SP;Velório Municipal de Assis;R. Nivaldo Neres Gusmão – Vila Ribeiro;19802-480;Atendimento 24 horas
-Casa de Velório;Assis;SP;Centro de Serviços Funerários São Vicente;Av. Abílio Duarte de Souza – Vila Rosangela;19813-000;
-Casa de Velório;Assis;SP;Funerária Santa Rosa Assis;Av. Nove de Julho, 641 – Centro;19802-201;Atendimento 24 horas
-Casa de Velório;Assis;SP;Funerária Pax Universal;R. Smith Vasconcelos, 851 – Centro;19814-010;Atendimento 24 horas
-Velório Municipal;Cândido Mota;SP;Velório Municipal Antonio Marobo;Av. da Saudade – Cândido Mota;19880-000;Anexo ao Cemitério Municipal
-Casa de Velório;Cândido Mota;SP;Funerária Peniel;R. Fadlo Jabur, 835 – Centro;19880-000;Atendimento 24 horas
-Velório Municipal;Paraguaçu Paulista;SP;Velório Municipal de Paraguaçu Paulista;R. Guerino Matheus, 46 – Jardim Paulista;19700-000;Próximo ao Cemitério da Paz
-Casa de Velório;Paraguaçu Paulista;SP;Funerária Cristo Rei Paraguaçu;R. Ataliba Leonel, 33 – Vila Affini;19703-002;Atendimento 24 horas
-Casa de Velório;Presidente Venceslau;SP;Organização Presidente;Av. Dom Pedro II, 35 – Centro;19400-000;Atendimento 24 horas
-Casa de Velório;Dracena;SP;VidaPrev Memorial;R. Carlos Gomes, 1006 – Jardim Jussara;17900-000;Atendimento 24 horas
-Casa de Velório;Dracena;SP;Mutuária Dracenense;Av. José Bonifácio, 931 – Centro;17900-000;
-Cemitério;Presidente Prudente;SP;Cemitério Municipal São João Batista;R. José Bongiovani, 975 – Vila Liberdade;19025-812;Todos os dias, das 7h às 17h
-Cemitério;Presidente Prudente;SP;Cemitério Municipal Campal Parque da Paz;Av. José Campos do Amaral, 809-995 – Res. Anita Tiezzi;;Todos os dias, das 7h às 18h
+Velório Municipal;Adamantina;SP;Velório Municipal de Adamantina;Av. da Saudade, 1499;;Fonte: Google Maps — conferir
+Cemitério;Adamantina;SP;Cemitério Municipal de Adamantina;Av. da Saudade, 842-958 - Jardim Europa;;Fonte: Google Maps — conferir
+Velório Municipal;Alfredo Marcondes;SP;Velório Municipal de Alfredo Marcondes;Rodovia Julio Budiski;;Fonte: Google Maps — conferir
+Cemitério;Alfredo Marcondes;SP;Cemitério Municipal de Alfredo Marcondes;R. José Avancine;;Fonte: Google Maps — conferir
+Cemitério;Alto Alegre;SP;Cemitério Municipal de Alto Alegre;R. João Fachini;;Fonte: Google Maps — conferir
 Cemitério;Álvares Machado;SP;Cemitério Municipal de Álvares Machado;R. Vicente de Carvalho, s/n – Centro;19160-000;
-Cemitério;Regente Feijó;SP;Cemitério Municipal de Regente Feijó (Antigo);R. Duque de Caxias, 2-100;19570-000;
-Cemitério;Regente Feijó;SP;Cemitério Municipal de Regente Feijó (Novo);Regente Feijó – SP;19570-000;
-Cemitério;Pirapozinho;SP;Cemitério Municipal de Pirapozinho;Av. Washington Luiz, s/n;19200-000;
-Cemitério;Martinópolis;SP;Cemitério Municipal São João Batista;R. Ten. Casemiro Dias, 21 – Centro;19500-000;Anexo ao Escritório do Cemitério Municipal
-Cemitério;Martinópolis;SP;Cemitério de Martinópolis (Extensão);Av. Ângelo Corghi, 1745;19500-000;
-Cemitério;Martinópolis;SP;Cemitério Municipal Dona Elizabete;R. José Lino de Andrade, s/n – Distrito de Guachos;19500-000;Distrito de Guachos
-Cemitério;Rancharia;SP;Cemitério Municipal de Rancharia;R. Jorge Custódio de Souza – Jardim Primavera;19600-000;
+Cemitério;Andradina;SP;Cemitério Memorial Park - Andradina;R. Sebastião Arantes, 1251;;Fonte: Google Maps — conferir
+Cemitério;Andradina;SP;Cemitério São Sebastião;R. Bahia, 1071;;Fonte: Google Maps — conferir
+Velório Municipal;Anhumas;SP;Velorio Municipal Rogerio Rodrigues;R. Vicente José, 1107;;Fonte: Google Maps — conferir
+Cemitério;Anhumas;SP;Cemitério Municipal Cristo Redentor;R. Vicente Lopes Ramon, 994;;Fonte: Google Maps — conferir
+Cemitério;Araçatuba;SP;Cemitério Municipal Recanto de Paz;R. Wandenkolk;;Fonte: Google Maps — conferir
+Cemitério;Araçatuba;SP;Cemitério Vertical e Crematório Memorial Laluce;R. Itapura, 21;;Fonte: Google Maps — conferir
+Cemitério;Araçatuba;SP;Jardim da Luz Cemitério Parque;Via de Acesso Olegário Ferraz, 2446-2514;;Fonte: Google Maps — conferir
+Cemitério;Arco-Íris;SP;Cemitério Municipal de Arco-Íris;R. Ângelo Sanches Parra;;Fonte: Google Maps — conferir
+Velório Municipal;Assis;SP;Velório Municipal de Assis;R. Nivaldo Neres Gusmão – Vila Ribeiro;19802-480;Atendimento 24 horas
 Cemitério;Assis;SP;Cemitério Municipal da Saudade (Acesso Principal);R. José Nogueira Marmontel, s/n – Vila Nova Santana;19814-360;Todos os dias, das 7h30 às 17h
 Cemitério;Assis;SP;Cemitério Municipal da Saudade (Acesso Vila Jardim Aeroporto);R. João Pasquarelli, s/n – Vila Jardim Aeroporto;19814-190;
+Velório Municipal;Bastos;SP;Velório Público Municipal de Bastos;Av. Dezoito de Junho, 90;;Fonte: Google Maps — conferir
+Cemitério;Bastos;SP;Cemitério Municipal de Bastos;R. Hokkaido, 2-50;;Fonte: Google Maps — conferir
+Cemitério;Bento de Abreu;SP;Cemitério Municipal de Bento de Abreu;;;Fonte: Google Maps — conferir
+Cemitério;Bilac;SP;Cemitério Municipal de Bilac/SP;Av. Amália, 623-763;;Fonte: Google Maps — conferir
+Cemitério;Birigui;SP;Cemitério da Saudades;R. Saudades, 929-1093;;Fonte: Google Maps — conferir
+Cemitério;Birigui;SP;Cemitério Fênix Memorial;R. Consolação;;Fonte: Google Maps — conferir
+Cemitério;Birigui;SP;Cemitério Parque;;;Fonte: Google Maps — conferir
+Cemitério;Borá;SP;Cemitério Municipal da Paz;Rua Adelaide de Souza Barreiros, s/n;;Fonte: Google Maps — conferir
+Velório Municipal;Braúna;SP;Velório Municipal de Braúna;Av. Barão do Rio Branco, 1400;;Fonte: Google Maps — conferir
+Cemitério;Braúna;SP;Cemitério Municipal de Braúna;;;Fonte: Google Maps — conferir
+Velório Municipal;Caiabu;SP;Velório Municipal de Caiabu;Av. Aurora Coelho de Lemos;;Fora da sede (11.4 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Caiabu;SP;Cemitério Municipal de Caiabu;;;Fonte: Google Maps — conferir
+Cemitério;Caiuá;SP;Cemitério Municipal de Caiuá;Av. Álvaro Coelho, s/n - Centro;;Fonte: Google Maps — conferir
+Cemitério;Campos Novos Paulista;SP;Cemiterio Municipal De Campos Novos Paulista;R. Angelina Bárbara Soares, 1-85;;Fonte: Google Maps — conferir
+Velório Municipal;Cândido Mota;SP;Velório Municipal Antonio Marobo;Av. da Saudade – Cândido Mota;19880-000;Anexo ao Cemitério Municipal
 Cemitério;Cândido Mota;SP;Cemitério Municipal de Cândido Mota;Av. da Saudade, 464;19880-000;Todos os dias, das 8h às 17h
+Velório Municipal;Castilho;SP;Velório Municipal de Castilho;R. Benedito R Matos, 21-187;;Fonte: Google Maps — conferir
+Cemitério;Castilho;SP;Cemitério Municipal de Castilho;R. Dois, 66-112;;Fonte: Google Maps — conferir
+Cemitério;Clementina;SP;Cemiterio Municipal de Clementina;;;Fonte: Google Maps — conferir
+Velório Municipal;Coroados;SP;Velório Municipal de Coroados;;;Fonte: Google Maps — conferir
+Cemitério;Coroados;SP;Cemitério Municipal de Coroados;Via de Acesso a Rodovia SP-300;;Fonte: Google Maps — conferir
+Cemitério;Cruzália;SP;Cemitério Municipal de Cruzália;Av. Luiz Zandonadi;;Fonte: Google Maps — conferir
+Cemitério;Dracena;SP;Cemitério Municipal de Dracena;R. Mal. Deodoro da Fonseca, 2047 – Jardim Kennedy;17900-000;
+Velório Municipal;Echaporã;SP;Velório Municipal de Echaporã;;;Fonte: Google Maps — conferir
+Cemitério;Echaporã;SP;Cemitério Municipal de Echaporã - SP;R. Pai Clemente Alberto de Souza, 96 - Echapora;;Fonte: Google Maps — conferir
+Velório Municipal;Emilianópolis;SP;Velório Municipal de Emilianópolis;R. Idalina Maria Fiorese, 2 - Centro;;Fonte: Google Maps — conferir
+Cemitério;Emilianópolis;SP;Cemitério Municipal de Emilianópolis;R. Caetano Marchi, 18-96;;Fonte: Google Maps — conferir
+Cemitério;Estrela do Norte;SP;Cemitério Municipal de Estrela do Norte;;;Fonte: Google Maps — conferir
+Velório Municipal;Euclides da Cunha Paulista;SP;Velório Municipal de Euclides da Cunha Paulista;R. João Fagundes da Silva;;Fonte: Google Maps — conferir
+Cemitério;Euclides da Cunha Paulista;SP;Cemitério Municipal de Euclides da Cunha Paulista;;;Fonte: Google Maps — conferir
+Velório Municipal;Flora Rica;SP;Velório Municipal de Flora Rica;R. Maria de Jesus Pereira Sena, 471;;Fonte: Google Maps — conferir
+Cemitério;Flora Rica;SP;Cemitério Municipal de Flora Rica - SP;R. Dois, 1;;Fonte: Google Maps — conferir
+Velório Municipal;Flórida Paulista;SP;Velório municipal de Flórida Paulista;R. Sergipe, 413;;Fonte: Google Maps — conferir
+Cemitério;Flórida Paulista;SP;Cemitério Municipal de Flórida Paulista (FORNTUNATO PANGIONI);Av. Rio do Peixe, 667;;Fonte: Google Maps — conferir
+Cemitério;Florínia;SP;Cemitério Municipal de Florínea (Necropólis);, Av. da Saudade, 2;;Fonte: Google Maps — conferir
+Cemitério;Gabriel Monteiro;SP;Cemitério Municipal de Gabriel Monteiro;Av. Padre Tiago Jacujus Buner, 285-401;;Fonte: Google Maps — conferir
+Velório Municipal;Glicério;SP;Velório Municipal de Glicério;R. Pref. Fuad Eid;;Fonte: Google Maps — conferir
+Cemitério;Glicério;SP;Cemitério Municipal de Glicério;;;Fonte: Google Maps — conferir
+Velório Municipal;Guaraçaí;SP;Velório Municipal de Guaraçaí;R. Protazio Cardoso Costa;;Fonte: Google Maps — conferir
+Cemitério;Guaraçaí;SP;Cemitério Municipal de Guaraçaí;;;Fonte: Google Maps — conferir
+Cemitério;Guararapes;SP;Cemitério de Guararapes SP;Av. Washington Luís;;Fonte: Google Maps — conferir
+Cemitério;Herculândia;SP;Cemitério Público de Herculândia;;;Fonte: Google Maps — conferir
+Cemitério;Iacri;SP;Cemitério Municipal de Iacri;R. Bahia;;Fonte: Google Maps — conferir
+Cemitério;Iepê;SP;Cemiterio Municipal De Iepê;R. Gardênia, 99-125 - Centro;;Fonte: Google Maps — conferir
+Velório Municipal;Indiana;SP;Velório Municipal de Indiana;;;Fonte: Google Maps — conferir
+Cemitério;Indiana;SP;Cemitério Necrópole de Indiana;;;Fonte: Google Maps — conferir
+Cemitério;Inúbia Paulista;SP;Cemitério Municipal de Inúbia Paulista;R. Venceslau Braz, 343;;Fonte: Google Maps — conferir
+Velório Municipal;Irapuru;SP;Velório Municipal de Irapuru;Av. Osvaldo Cruz;;Fonte: Google Maps — conferir
+Cemitério;Irapuru;SP;Cemitério Municipal de Irapuru;;;Fonte: Google Maps — conferir
+Cemitério;João Ramalho;SP;Cemitério Municipal de João Ramalho;;;Fonte: Google Maps — conferir
+Cemitério;Junqueirópolis;SP;Cemitério Municipal de Junqueirópolis;Av. da Saudade - Jardim Paulista;;Fonte: Google Maps — conferir
+Velório Municipal;Lavínia;SP;Velório municipal de Lavínia;;;Fonte: Google Maps — conferir
+Cemitério;Lavínia;SP;Cemitério de Lavínia;;;Fonte: Google Maps — conferir
+Cemitério;Lucélia;SP;Cemitério Municipal de Lucélia;R. Geraldo Costa e Siva;;Fonte: Google Maps — conferir
+Velório Municipal;Luiziânia;SP;Velório Municipal de Luiziânia;Av. Caiuá, 88-162;;Fonte: Google Maps — conferir
+Cemitério;Luiziânia;SP;Cemiterio Parque dos Ipes;R. Guana;;Fonte: Google Maps — conferir
+Velório Municipal;Lutécia;SP;Velório Municipal Lutécia SP;R. Caetano dos Santos, 111;;Fonte: Google Maps — conferir
+Cemitério;Lutécia;SP;Cemitério Municipal de Lutécia;R. Manoel da Silva, 360;;Fonte: Google Maps — conferir
+Velório Municipal;Marabá Paulista;SP;Velório Municipal de Marabá Paulista;;;Fonte: Google Maps — conferir
+Cemitério;Marabá Paulista;SP;Cemitério Municipal de Marabá Paulista;R. Arcanjo Miguel Pero, 933-1007;;Fonte: Google Maps — conferir
+Cemitério;Maracaí;SP;Cemitério Municipal de Maracaí;;;Fonte: Google Maps — conferir
+Cemitério;Mariápolis;SP;Cemitério Municipal Mariápolis - SP;;;Fonte: Google Maps — conferir
+Velório Municipal;Marília;SP;Velório Municipal de Marilia;Av. da Saudade, 815;;Fonte: Google Maps — conferir
+Velório Municipal;Marília;SP;Velório Municipal do distrito de Padre Nobrega;Av. Mauá, 532;;Fora da sede (9.1 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Marília;SP;Cemitério da Paz;R. Nossa Sra. da Aparecida, 491;;Fonte: Google Maps — conferir
+Cemitério;Marília;SP;Cemitério de Padre Nóbrega;R. Feijó, 205-339;;Fora da sede (9.2 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Marília;SP;Cemitério Municipal de Rosália;;;Fora da sede (25.7 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Marília;SP;Cemitério Parque das Orquídeas;Av. Ermelinda Clárice Sanches Casarini, 860;;Fonte: Google Maps — conferir
+Velório Municipal;Marinópolis;SP;Velório Municipal de Marinópolis;R. Sete de Setembro, 463-707;;Fonte: Google Maps — conferir
+Unidade Interplan;Martinópolis;SP;Funerária Interplan (Escritório e Casa de Velório);Av. Cel. João Gomes Martins, 334 – Centro (Casa de Velório na R. José Maria Sanches, 190 – Centro);19500-000;Ao lado da Santa Casa
+Velório Municipal;Martinópolis;SP;Velório Municipal (Distrito de Guachos);Av. Ourinhos, 391 – Guachos;19500-000;Distrito de Guachos
+Velório Municipal;Martinópolis;SP;Velório Municipal de Martinópolis;;;Fora da sede (22.4 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Martinópolis;SP;Cemitério de Martinópolis (Extensão);Av. Ângelo Corghi, 1745;19500-000;
+Cemitério;Martinópolis;SP;Cemitério Municipal Dona Elizabete;R. José Lino de Andrade, s/n – Distrito de Guachos;19500-000;Distrito de Guachos
+Cemitério;Martinópolis;SP;Cemitério Municipal São João Batista;R. Ten. Casemiro Dias, 21 – Centro;19500-000;Anexo ao Escritório do Cemitério Municipal
+Velório Municipal;Mirandópolis;SP;Velório Municipal de Mirandópolis;R. 24 de Junho, 892 - Jardim Aeroporto I e II;;Fonte: Google Maps — conferir
+Cemitério;Mirandópolis;SP;Cemitério Municipal de Mirandópolis;;;Fora da sede (14.4 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Mirandópolis;SP;Cemitério Saudades;;;Fonte: Google Maps — conferir
+Velório Municipal;Mirante do Paranapanema;SP;Velório Municipal de Mirante do Paranapanema;R. Abílio Matias Gomes;;Fonte: Google Maps — conferir
+Cemitério;Mirante do Paranapanema;SP;Cemitério Municipal Mirante do Paranapanema;Av. Zil Brasil;;Fonte: Google Maps — conferir
+Cemitério;Monte Castelo;SP;Cemitério Municipal de Monte Castelo;;;Fonte: Google Maps — conferir
+Velório Municipal;Murutinga do Sul;SP;Velório Municipal de Murutinga do Sul;;;Fonte: Google Maps — conferir
+Cemitério;Murutinga do Sul;SP;Cemitério de Murutinga do Sul;;;Fonte: Google Maps — conferir
+Velório Municipal;Nantes;SP;Velório Municipal De Nantes;R. Siqueira, 177;;Fonte: Google Maps — conferir
+Cemitério;Nantes;SP;Cemitério Municipal de Nantes;;;Fonte: Google Maps — conferir
+Velório Municipal;Narandiba;SP;Velório Municipal de Narandiba;R. Alves de Almeida, 357;;Fonte: Google Maps — conferir
+Cemitério;Narandiba;SP;Cemitério Municipal de Narandiba;R. Alves de Almeida;;Fonte: Google Maps — conferir
+Cemitério;Nova Castilho;SP;Cemitério Municipal de Nova Castilho;Estr. Nova Palmira, s/n;;Fonte: Google Maps — conferir
+Velório Municipal;Nova Guataporanga;SP;Velório Municipal de Nova Guataporanga;;;Fonte: Google Maps — conferir
+Cemitério;Nova Guataporanga;SP;Cemitério Municipal de Nova Guataporanga;;;Fonte: Google Maps — conferir
+Cemitério;Nova Independência;SP;Cemitério Municipal de Nova Independência;;;Fonte: Google Maps — conferir
+Cemitério;Oriente;SP;Cemitério Municipal de Oriente;Av. Max Wirth;;Fonte: Google Maps — conferir
+Velório Municipal;Oscar Bressane;SP;Velório Municipal Luiz Ribeiro da Silva;;;Fonte: Google Maps — conferir
+Cemitério;Oscar Bressane;SP;Cemitério de Oscar Bressane;;;Fonte: Google Maps — conferir
+Velório Municipal;Osvaldo Cruz;SP;Velório Municipal de Osvaldo Cruz;Av. Pres. Roosevelt, 2309;;Fonte: Google Maps — conferir
+Cemitério;Osvaldo Cruz;SP;Cemitério Municipal de Osvaldo Cruz;Av. Pres. Roosevelt, 2407 - Vila Cavaru;;Fonte: Google Maps — conferir
+Cemitério;Ouro Verde;SP;Cemiterio Municipal Ouro Verde;;;Fonte: Google Maps — conferir
+Velório Municipal;Pacaembu;SP;Velório Municipal de Pacaembu;R. Teruite Takahashi - Guaraniuva;;Fonte: Google Maps — conferir
+Cemitério;Pacaembu;SP;Cemitério Municipal Pacaembu;;;Fonte: Google Maps — conferir
+Velório Municipal;Palmital;SP;Velorio Muncipal;Av. Nossa Sra. da Paz;;Fonte: Google Maps — conferir
+Cemitério;Palmital;SP;Cemitério Municipal da Paz;R. Francisco Batista, s/n;;Fonte: Google Maps — conferir
+Cemitério;Palmital;SP;Cemitério Municipal do Distrito de Sussuí;;;Fora da sede (9.2 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Velório Municipal;Panorama;SP;Velório Municipal de Panorama;R. Pedro Milaniz, 153-307 - Nosso Teto;;Fonte: Google Maps — conferir
+Cemitério;Panorama;SP;Cemitério Municipal de Panorama;;;Fonte: Google Maps — conferir
+Velório Municipal;Paraguaçu Paulista;SP;Velório Municipal de Paraguaçu Paulista;R. Guerino Matheus, 46 – Jardim Paulista;19700-000;Próximo ao Cemitério da Paz
 Cemitério;Paraguaçu Paulista;SP;Cemitério da Paz;Av. Siqueira Campos, 1366 – Jardim Paulista;19700-000;Próximo ao Velório Municipal (R. Guerino Matheus, 46)
 Cemitério;Paraguaçu Paulista;SP;Cemitério Municipal do Distrito de Conceição de Monte Alegre;Distrito de Conceição de Monte Alegre;19700-000;
 Cemitério;Paraguaçu Paulista;SP;Cemitério Municipal do Distrito de Roseta;Distrito de Roseta;19700-000;
+Cemitério;Parapuã;SP;Cemitério Municipal de Parapua;R. Cuiabá, 1483-1607;;Fonte: Google Maps — conferir
+Velório Municipal;Paulicéia;SP;Velório Municipal de Paulicéia;;;Fonte: Google Maps — conferir
+Cemitério;Paulicéia;SP;Cemitério Municipal De Paulicéia;;;Fonte: Google Maps — conferir
+Velório Municipal;Pedrinhas Paulista;SP;Velório Municipal de Pedrinhas Paulista;Av. Dom Ernesto Montagner, 596;;Fonte: Google Maps — conferir
+Cemitério;Pedrinhas Paulista;SP;Cemitério Municipal de Pedrinhas Paulista;;;Fonte: Google Maps — conferir
+Velório Municipal;Piacatu;SP;Velório Municipal de Piacatu;R. Domingos Vidal;;Fonte: Google Maps — conferir
+Cemitério;Piacatu;SP;Cemitério da Saudade;Av Roque Brambila, 952-1046;;Fonte: Google Maps — conferir
+Cemitério;Piquerobi;SP;Cemitério Municipal de Piquerobi;;;Fonte: Google Maps — conferir
+Unidade Interplan;Pirapozinho;SP;Interplan - Casa de Velório Pirapozinho;R. Tiradentes, 306 – Centro;19200-053;Atendimento 24 horas
+Velório Municipal;Pirapozinho;SP;Velório Municipal de Pirapozinho;Av. Washington Luiz, s/n;19200-000;Anexo ao Cemitério Municipal
+Cemitério;Pirapozinho;SP;Cemitério Municipal de Pirapozinho;Av. Washington Luiz, s/n;19200-000;
+Cemitério;Platina;SP;Cemitério Municipal de Platina;;;Fonte: Google Maps — conferir
+Velório Municipal;Pompéia;SP;Velório Municipal de Pompéia;Av. Reinaldo Bonacasata, 1-87;;Fonte: Google Maps — conferir
+Cemitério;Pompéia;SP;Cemitério Municipal de Pompéia;Av. Reinaldo Bonacasata, 1-87;;Fonte: Google Maps — conferir
+Cemitério;Pracinha;SP;Cemitério de Pracinha;;;Fonte: Google Maps — conferir
+Cemitério;Presidente Bernardes;SP;Cemitério Municipal de Presidente Bernardes;R. Dr. Arthur Falcone, 545 - Pres. Bernardes;;Fonte: Google Maps — conferir
+Cemitério;Presidente Epitácio;SP;Cemitério Municipal Horto da Igualdade;R. Jucá Pita, s/n - Centro;;Fonte: Google Maps — conferir
+Unidade Interplan;Presidente Prudente;SP;Interplan - Casa de Velório;Av. da Saudade, 1471 – Cidade Universitária;19050-310;Atendimento 24 horas
+Velório Municipal;Presidente Prudente;SP;Velório Municipal de Presidente Prudente (anexo ao Cemitério São João Batista);R. José Bongiovani, 975 – Vila Liberdade;19025-812;Salas municipais anexas ao cemitério
+Cemitério;Presidente Prudente;SP;Cemitério Municipal Campal Parque da Paz;Av. José Campos do Amaral, 809-995 – Res. Anita Tiezzi;;Todos os dias, das 7h às 18h
+Cemitério;Presidente Prudente;SP;Cemitério Municipal São João Batista;R. José Bongiovani, 975 – Vila Liberdade;19025-812;Todos os dias, das 7h às 17h
 Cemitério;Presidente Venceslau;SP;Cemitério Municipal de Presidente Venceslau;Rua Oswaldo dos Reis Tavares, s/n – Centro;19400-000;Todos os dias, das 7h às 17h
-Cemitério;Dracena;SP;Cemitério Municipal de Dracena;R. Mal. Deodoro da Fonseca, 2047 – Jardim Kennedy;17900-000;
+Cemitério;Quatá;SP;Cemitério Municipal de Quatá;Av. Rui Barbosa, sn;;Fonte: Google Maps — conferir
+Cemitério;Queiroz;SP;Cemitério Municipal de Queiroz;;;Fonte: Google Maps — conferir
+Cemitério;Quintana;SP;Cemitério Municipal de Quintana;;;Fonte: Google Maps — conferir
+Unidade Interplan;Rancharia;SP;Casa de Velório Interplan;Av. Comendador Pedro Ferreira Doninho, 254 – Jardim Primavera;19600-000;Atendimento 24 horas
+Velório Municipal;Rancharia;SP;Velório Municipal de Rancharia;R. Jorge Custódio de Souza, 266 – Jardim Primavera;19600-000;Anexo ao Cemitério Municipal
+Cemitério;Rancharia;SP;Cemitério Municipal de Rancharia;R. Jorge Custódio de Souza – Jardim Primavera;19600-000;
+Cemitério;Regente Feijó;SP;Cemitério Municipal de Regente Feijó (Antigo);R. Duque de Caxias, 2-100;19570-000;
+Cemitério;Regente Feijó;SP;Cemitério Municipal de Regente Feijó (Novo);Regente Feijó – SP;19570-000;
+Velório Municipal;Ribeirão dos Índios;SP;Velório Municipal de Ribeirão dos Índios;R. Pedro Gonçalves de Lima, 61;;Fonte: Google Maps — conferir
+Cemitério;Ribeirão dos Índios;SP;Cemitério Municipal de Ribeirão dos Índios;;;Fonte: Google Maps — conferir
+Velório Municipal;Rinópolis;SP;Velório Municipal Rinópolis;R. Campos Sáles, 2-138;;Fonte: Google Maps — conferir
+Cemitério;Rinópolis;SP;Cemitério Municipal de Rinópolis;R. D Pedro II, 406;;Fonte: Google Maps — conferir
+Cemitério;Rubiácea;SP;Cemitério Municipal de Rubiácea;R. Max Wirth, 210;;Fonte: Google Maps — conferir
+Cemitério;Sagres;SP;Cemitério Da Saudade;R. Ver. Geraldo Teodoro de Carvalho, 516-596;;Fonte: Google Maps — conferir
+Cemitério;Salmourão;SP;Cemitério Municipal de Salmourão;R. Andrelaine Pravato, 365 - Centro;;Fonte: Google Maps — conferir
+Cemitério;Sandovalina;SP;Cemitério Municipal de Sandovalina;;;Fonte: Google Maps — conferir
+Cemitério;Santa Mercedes;SP;Cemitério Municipal De Santa Mercedes;R. São Francisco, 256 - Centro;;Fonte: Google Maps — conferir
+Cemitério;Santo Anastácio;SP;Cemitério da Paz de Santo Anastácio;R. Valter Oto Neves, 451-537;;Fonte: Google Maps — conferir
+Velório Municipal;Santo Expedito;SP;Velório Municipal de Santo Expedito;SP-501, 570 - Vila Liberdade;;Fonte: Google Maps — conferir
+Cemitério;Santo Expedito;SP;Cemitério Municipal de Santo Expedito;Rodovia Julio Budiski, 542-556 - Vila Liberdade;;Fonte: Google Maps — conferir
+Velório Municipal;Santópolis do Aguapeí;SP;Velório Municipal de Santópolis do Aguapeí;R. Alagoas, 160;;Fonte: Google Maps — conferir
+Cemitério;Santópolis do Aguapeí;SP;Cemitério em Santopolis do Aguapei;;;Fonte: Google Maps — conferir
+Cemitério;São João do Pau d'Alho;SP;Cemitério de São João do Pau d'Alho;;;Fonte: Google Maps — conferir
+Velório Municipal;Taciba;SP;Velório Municipal de Taciba;;;Fonte: Google Maps — conferir
+Cemitério;Taciba;SP;Cemitério Municipal de Taciba;;;Fonte: Google Maps — conferir
+Velório Municipal;Tarabai;SP;Velório Municipal de Tarabai;Av. João Bofi;;Fonte: Google Maps — conferir
+Cemitério;Tarabai;SP;Cemitério Municipal de Tarabai;Av. João Bofi;;Fonte: Google Maps — conferir
+Cemitério;Tarumã;SP;Cemitério Municipal de Tarumã;;;Fonte: Google Maps — conferir
+Velório Municipal;Teodoro Sampaio;SP;Velório Municipal de Teodoro Sampaio;R. Luís P do Nascimento, 939;;Fonte: Google Maps — conferir
+Cemitério;Teodoro Sampaio;SP;Cemitério Municipal Cristo Rei;;;Fonte: Google Maps — conferir
+Velório Municipal;Tupã;SP;Velório Municipal de Tupã;R. Caingangs, 2-82;;Fonte: Google Maps — conferir
+Velório Municipal;Tupã;SP;Velório Tamoios;Av. Lélio Pizza, 1314;;Fonte: Google Maps — conferir
+Cemitério;Tupã;SP;Cemitério da Saudade;R. Caingangs, 2235;;Fonte: Google Maps — conferir
+Cemitério;Tupã;SP;Cemitério das Palmeiras;;;Fonte: Google Maps — conferir
+Cemitério;Tupã;SP;Cemitério dos Pioneiros Letos;;;Fora da sede (16.7 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Tupã;SP;Cemitério Municipal de Tupã;;;Fonte: Google Maps — conferir
+Cemitério;Tupã;SP;Cemitério São Pedro;Rua Guaicurus;;Fonte: Google Maps — conferir
+Cemitério;Tupi Paulista;SP;Cemitério Municipal de Tupi Paulista;Alameda da Saudade, 304-596 - Vila Camargo;;Fonte: Google Maps — conferir
+Cemitério;Valparaíso;SP;Cemitério Municipal - Valparaíso - SP;, R. Quinze de Novembro, 1608;;Fonte: Google Maps — conferir
+Velório Municipal;Anaurilândia;MS;Velório Municipal de Anaurilândia;;;Fonte: Google Maps — conferir
+Cemitério;Anaurilândia;MS;Cemitério Municipal de Anaurilândia;R. Duque de Caxias;;Fonte: Google Maps — conferir
+Cemitério;Bataguassu;MS;Cemitério Municipal de Bataguassu;Av. Pres. Prudente, s/n - Centro;;Fonte: Google Maps — conferir
+Velório Municipal;Brasilândia;MS;Velório Municipal - Genuína Rodrigues da Conceição;;;Fonte: Google Maps — conferir
+Velório Municipal;Brasilândia;MS;Velório Municipal - Maria Conceição da Silva Gomes;R. 4, 1;;Fora da sede (9.7 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Brasilândia;MS;Cemitério Municipal de Brasilândia;;;Fonte: Google Maps — conferir
+Cemitério;Três Lagoas;MS;Cemitério da Piaba;;;Fora da sede (45.1 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Três Lagoas;MS;Cemitério Memorial Park - Três Lagoas;R. Trajano dos Santos, 1.176;;Fonte: Google Maps — conferir
+Cemitério;Três Lagoas;MS;Cemitério Municipal Santo Antônio;R. Angelina Tebet;;Fonte: Google Maps — conferir
+Cemitério;Alto Paraná;PR;Cemitério de Alto Paraná;Av. Aurora;;Fonte: Google Maps — conferir
+Cemitério;Alvorada do Sul;PR;Cemitério Municipal de Alvorada do Sul;R. Esaú Silveira;;Fonte: Google Maps — conferir
+Cemitério;Ângulo;PR;Cemitério De Ângulo;R. Dante Pelegrini, 433-481;;Fonte: Google Maps — conferir
+Cemitério;Arapongas;PR;Cemitério Municipal de Arapongas;Cemitério Municipal - R. Pica Pau, 2448-2736;;Fonte: Google Maps — conferir
+Cemitério;Arapongas;PR;Cemitério Municipal Parque Jardim das Acácias;PR-218, Km 04;;Fonte: Google Maps — conferir
+Cemitério;Assaí;PR;Cemitério Municipal de Assaí;R. Carlos Y Kato, s/n - Centro;;Fonte: Google Maps — conferir
+Cemitério;Astorga;PR;Cemitério Municipal de Astorga;, Av. Rio de Janeiro, 363;;Fonte: Google Maps — conferir
+Cemitério;Astorga;PR;Cemitério Municipal do Distrito de Santa Zélia;R. Ermano Ribeiro;;Fonte: Google Maps — conferir
+Velório Municipal;Atalaia;PR;Capela Mortuária de Atalaia;;;Fonte: Google Maps — conferir
+Cemitério;Atalaia;PR;Cemitério Municipal de Atalaia;;;Fonte: Google Maps — conferir
+Cemitério;Bandeirantes;PR;Cemitério Municipal de Bandeirantes;Av. João da Silva Cravo;;Fonte: Google Maps — conferir
+Cemitério;Bela Vista do Paraíso;PR;Cemitério São João Batista;R. Erasto Gaertner, 360 - Centro;;Fonte: Google Maps — conferir
+Cemitério;Cafeara;PR;Cemitério Municipal de Cafeara;Rua Domingos Barbosa, 343;;Fonte: Google Maps — conferir
+Cemitério;Cambé;PR;Cemitério Municipal Padre Symphoriano Kopf;R. Nossa Sra. do Rocio, 1001 - Centro;;Fonte: Google Maps — conferir
+Velório Municipal;Centenário do Sul;PR;Velório Municipal de Centenário do Sul;;;Fonte: Google Maps — conferir
+Cemitério;Centenário do Sul;PR;Cemitério de Ribeirão Centenário;;;Fonte: Google Maps — conferir
+Cemitério;Centenário do Sul;PR;Cemitério Municipal - Jardim da Paz;Rod. Issa Jabur, 141;;Fonte: Google Maps — conferir
+Cemitério;Colorado;PR;Cemitério Municipal de Colorado;R. João Trevisan;;Fonte: Google Maps — conferir
+Velório Municipal;Cornélio Procópio;PR;Velório Municipal de Cornélio Procópio;;;Fonte: Google Maps — conferir
+Cemitério;Cornélio Procópio;PR;Cemitério Municipal da Saudade;Tv. Joaquim Botas Margarido, 300;;Fonte: Google Maps — conferir
+Cemitério;Cruzeiro do Sul;PR;Cemitério Municipal de Cruzeiro do Sul;R. Ver. João Lemes da Silva, 1-57;;Fonte: Google Maps — conferir
+Cemitério;Florestópolis;PR;Cemitério Municipal de Florestópolis;;;Fonte: Google Maps — conferir
+Cemitério;Flórida;PR;Cemitério Municipal de Flórida;;;Fonte: Google Maps — conferir
+Cemitério;Guaraci;PR;Cemitério Municipal Guaraci;;;Fonte: Google Maps — conferir
+Cemitério;Ibiporã;PR;Cemitério Municipal São Lucas;R. Márcia Figueiredo Alves Pereira, s/n;;Fonte: Google Maps — conferir
+Cemitério;Iguaraçu;PR;Cemitério Jardim Uniao Um;;;Fonte: Google Maps — conferir
+Cemitério;Inajá;PR;Cemitério de Inajá;R. São José;;Fonte: Google Maps — conferir
+Cemitério;Itaguajé;PR;Cemitério Municipal de Itaguajé;R. Sete de Setembro, 665;;Fonte: Google Maps — conferir
+Cemitério;Itambaracá;PR;Cemitério Municipal de Itambaracá;R. XV de Novembro, 74;;Fonte: Google Maps — conferir
+Cemitério;Jaguapitã;PR;Cemitério Municipal de Jaguapitã;Av. Manoel Ribas, 583-689;;Fonte: Google Maps — conferir
+Cemitério;Jardim Olinda;PR;Cemitério Municipal de Jardim Olinda;;;Fonte: Google Maps — conferir
+Cemitério;Jataizinho;PR;Cemitério Municipal Frei Timóteo de Castelnuovo;Av. Antônio Brandão de Oliveira, 1.070 - Centro;;Fonte: Google Maps — conferir
+Cemitério;Leópolis;PR;Cemitério Recanto da Saudade;R. Renato Ticoulart;;Fonte: Google Maps — conferir
+Cemitério;Lobato;PR;Cemitério de Lobato;;;Fonte: Google Maps — conferir
+Cemitério;Londrina;PR;Cemitério do Heimtal;R. Érico Brehmer, 330;;Fonte: Google Maps — conferir
+Cemitério;Londrina;PR;Cemitério e Crematório Parque das Allamandas;R. Joana Rodrigues Jondral, 155;;Fonte: Google Maps — conferir
+Cemitério;Londrina;PR;Cemitério Jardim da Saudade;Av. Saul Elkind, 2805;;Fonte: Google Maps — conferir
+Cemitério;Londrina;PR;Cemitério João XXIII;Av. da Saudade, 135;;Fonte: Google Maps — conferir
+Cemitério;Londrina;PR;Cemitério Municipal Padre Anchieta;R. Rútilo, 200;;Fonte: Google Maps — conferir
+Cemitério;Londrina;PR;Cemitério Parque Das Oliveiras - Londrina;Av. do Café, 225;;Fonte: Google Maps — conferir
+Cemitério;Londrina;PR;Cemitério São Pedro;R. Prof. João Cândido, 1114;;Fonte: Google Maps — conferir
+Cemitério;Lupionópolis;PR;Cemitério Municipal De Lupionópolis;R. Paraná, 1574 - 1668;;Fonte: Google Maps — conferir
+Cemitério;Mandaguaçu;PR;Cemitério Muncipal de Mandaguaçu;R. São Vicente, 272 - Jardim Sao Francisco de Assis;;Fonte: Google Maps — conferir
+Cemitério;Miraselva;PR;Cemitério Municipal de Miraselva;;;Fonte: Google Maps — conferir
+Cemitério;Munhoz de Melo;PR;Cemitério Municipal de Munhoz de Melo;;;Fonte: Google Maps — conferir
+Cemitério;Nossa Senhora das Graças;PR;Cemitério Municipal de Nossa Senhora das Graças;R. Santos, 187 - Centro;;Fonte: Google Maps — conferir
+Cemitério;Nova América da Colina;PR;Cemitério Municipal de Nova América da Colina;;;Fonte: Google Maps — conferir
+Cemitério;Nova Esperança;PR;Cemitério Municipal de Nova Esperança;R. Pres. Kenedy;;Fonte: Google Maps — conferir
+Cemitério;Nova Londrina;PR;Cemitério Municipal de Nova Londrina;R. Sebastião Morães, 1;;Fonte: Google Maps — conferir
+Velório Municipal;Paranacity;PR;Capela Mortuária de Paranacity;R. Papa João XXIII, 1504;;Fonte: Google Maps — conferir
+Cemitério;Paranacity;PR;Cemitério Municipal Benedito Grande;;;Fonte: Google Maps — conferir
+Cemitério;Paranapoema;PR;Cemitério Municipal de Paranapoema;;;Fonte: Google Maps — conferir
+Cemitério;Paranavaí;PR;Cemitério Municipal de Paranavaí;R. Adibe Aburad, 22 - Jardim Paraiso;;Fonte: Google Maps — conferir
+Cemitério;Pitangueiras;PR;Cemitério municipal de Pitangueiras;;;Fonte: Google Maps — conferir
+Cemitério;Porecatu;PR;Cemitério Municipal Cristo Rei;;;Fonte: Google Maps — conferir
+Cemitério;Prado Ferreira;PR;Cemitério Municipal de Prado Ferreira;;;Fonte: Google Maps — conferir
+Cemitério;Presidente Castelo Branco;PR;Cemitério de Presidente Castelo Branco;R. das Arvores, 50;;Fonte: Google Maps — conferir
+Cemitério;Primeiro de Maio;PR;Cemitério Municipal de Primeiro de Maio;R. Trinta e Quatro;;Fonte: Google Maps — conferir
+Velório Municipal;Rancho Alegre;PR;Capela Mortuária de Rancho Alegre;Av. Brasil, 610;;Fonte: Google Maps — conferir
+Cemitério;Rancho Alegre;PR;Cemitério de Rancho Alegre;;;Fonte: Google Maps — conferir
+Velório Municipal;Rolândia;PR;Capela Mortuária da Cidade de Rolândia;R. Santa Catarina, 1104-1152;;Fonte: Google Maps — conferir
+Velório Municipal;Rolândia;PR;Capela Mortuaria Vila Oliveira;;;Fonte: Google Maps — conferir
+Cemitério;Rolândia;PR;Cemitério Municipal Central;R. Santa Catarina, 559 - Centro;;Fonte: Google Maps — conferir
+Cemitério;Sabáudia;PR;Cemitério Municipal de Sabáudia;R. Arapongas;;Fonte: Google Maps — conferir
+Cemitério;Santa Fé;PR;Cemitério Municipal Catalo Buchi;;;Fonte: Google Maps — conferir
+Cemitério;Santa Inês;PR;Cemitério Municipal de Santa Inês;;;Fonte: Google Maps — conferir
+Cemitério;Santa Mariana;PR;Cemitério Municipal de Quinzópolis;;;Fora da sede (13.5 km, distrito/zona rural) — Fonte: Google Maps — conferir
+Cemitério;Santa Mariana;PR;Cemitério Municipal de Santa Mariana;R. Joaquim Xavier Cotrim;;Fonte: Google Maps — conferir
+Cemitério;Santo Inácio;PR;Cemitério Municipal Santo Inácio;R. João Quintino de Oliveira, 371-531;;Fonte: Google Maps — conferir
+Cemitério;São João do Caiuá;PR;Cemitério Municipal de São João do Caiuá;R. da Paz;;Fonte: Google Maps — conferir
+Velório Municipal;Sertaneja;PR;Capela Mortuária de Sertaneja;R. Miguel Marquês, 127-163;;Fonte: Google Maps — conferir
+Cemitério;Sertaneja;PR;Cemitério Municipal de Sertaneja;;;Fonte: Google Maps — conferir
+Cemitério;Sertanópolis;PR;Cemitério Municipal Joaquim Gomes de Souza;R. dos Pioneiros, s/n;;Fonte: Google Maps — conferir
+Cemitério;Terra Rica;PR;Cemitério Municipal de Terra Rica;;;Fonte: Google Maps — conferir
+Cemitério;Uniflor;PR;Cemitério Municipal de Uniflor;;;Fonte: Google Maps — conferir
+Cemitério;Uraí;PR;Cemitério Municipal Papa João Paulo II;Av. Kotaro Itimura, 108-126;;Fonte: Google Maps — conferir
