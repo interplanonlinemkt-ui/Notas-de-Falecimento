@@ -22,14 +22,14 @@
     },
     story: {
       label: 'story', w: 1080, h: 1920,
-      top:  { x: 540, y: 232, size: 25 },
-      oval: { cx: 540, cy: 600, rx: 260, ry: 290, b: 15 },
-      head: { x: 540, y: [992, 1028], size: 29 },
-      name: { x: 540, y: 1140, size: 98, min: 48, maxW: 920 },
-      dates:{ y: 1243, size: 41, left: 335, right: 735, s: 1.25 },
-      div:  { x: 540, y: 1320, h: 245 },
-      cols: { left: 290, right: 790, titleY: 1335, titleSize: 29, lineY: 1400, size: 25, min: 18, maxW: 440, maxLines: 7 },
-      // logo kept above Instagram's bottom UI area
+      top:  { x: 540, y: 212, size: 25 },
+      oval: { cx: 540, cy: 540, rx: 240, ry: 268, b: 14 },
+      head: { x: 540, y: [906, 942], size: 29 },
+      name: { x: 540, y: 1052, size: 98, min: 48, maxW: 920 },
+      dates:{ y: 1152, size: 41, left: 335, right: 735, s: 1.25 },
+      div:  { x: 540, y: 1228, h: 262 },
+      cols: { left: 290, right: 790, titleY: 1243, titleSize: 29, lineY: 1310, size: 25, min: 18, maxW: 440, maxLines: 7 },
+      // logo acima da área de resposta do Instagram; ~100 px de respiro entre o texto e a faixa verde
       footer: { y: 1590, logoW: 460, logoCY: 1700 },
     },
     wide: {
