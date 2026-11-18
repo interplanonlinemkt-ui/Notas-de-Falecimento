@@ -6,7 +6,6 @@
 <title>Gerador de Comunicado de Despedida · Interplan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Yellowtail&family=Montserrat:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
@@ -33,7 +32,7 @@
   </div>
   <div class="wrap titlebar">
     <h1 class="page-title">Gerador de Comunicado de Despedida</h1>
-    <p class="page-sub">Preencha os dados, confira a prévia e baixe a arte nos três formatos.</p>
+    <p class="page-sub">Preencha os dados, confira a prévia e baixe a arte no formato story (1080×1920).</p>
   </div>
 </nav>
 
@@ -44,6 +43,8 @@
       <strong>Clique para enviar</strong> ou arraste a foto aqui<br><small>JPG ou PNG</small>
     </div>
     <input type="file" id="file" accept="image/*" hidden>
+    <p class="modelos-label">Sem foto da pessoa? Use uma imagem padrão:</p>
+    <div class="modelos" id="modelos"></div>
     <div class="photo-tools" id="photoTools">
       <label for="zoom">Zoom</label>
       <input type="range" id="zoom" min="1" max="3" step="0.01" value="1">
@@ -82,16 +83,10 @@
   </section>
 
   <section class="preview" aria-label="Prévia">
-    <div class="tabs" role="tablist">
-      <button class="tab" role="tab" data-fmt="feed" aria-selected="true">Feed <small>1080×1350</small></button>
-      <button class="tab" role="tab" data-fmt="story" aria-selected="false">Story <small>1080×1920</small></button>
-      <button class="tab" role="tab" data-fmt="wide" aria-selected="false">Horizontal <small>1200×628</small></button>
-    </div>
     <div class="canvas-wrap"><canvas id="cv" width="1080" height="1350"></canvas></div>
     <div class="actions">
-      <button class="primary" id="btnAll">Baixar os 3 formatos (.zip)</button>
-      <button class="ghost" id="btnPng">Só este (PNG)</button>
-      <button class="ghost" id="btnJpg">Só este (JPG)</button>
+      <button class="primary" id="btnPng">Baixar story (PNG)</button>
+      <button class="ghost" id="btnJpg">JPG</button>
       <button class="ghost" id="btnLimpar">Limpar</button>
     </div>
     <div class="status" id="status"></div>
@@ -129,11 +124,11 @@
 <div class="modal" id="mComo" role="dialog" aria-modal="true"><div class="box"><button class="x" type="button" aria-label="Fechar">×</button>
   <h3>Como utilizar</h3>
   <ol>
-    <li><b>Envie a foto</b> e ajuste o enquadramento arrastando a imagem na prévia (use o zoom se precisar).</li>
+    <li><b>Envie a foto</b> da pessoa ou, se não houver, escolha uma <b>imagem padrão</b> (rosa, vela, céu, folhagem ou ursinho). Ajuste o enquadramento arrastando a imagem na prévia.</li>
     <li>Preencha <b>nome</b> e <b>datas</b> de nascimento e falecimento.</li>
     <li>No <b>velório</b> e no <b>sepultamento</b>, busque o local pelo nome ou pela cidade e escolha na lista. Se não encontrar, use “local não cadastrado” e digite nome, endereço e cidade.</li>
-    <li>Confira a prévia nas abas <b>Feed</b>, <b>Story</b> e <b>Horizontal</b>.</li>
-    <li>Clique em <b>Baixar os 3 formatos</b> para receber um .zip com as três artes, ou baixe só o formato aberto.</li>
+    <li>Confira a prévia do story.</li>
+    <li>Clique em <b>Baixar story (PNG)</b> ou em <b>JPG</b>.</li>
   </ol>
 </div></div>
 <div class="modal" id="mDuvidas" role="dialog" aria-modal="true"><div class="box"><button class="x" type="button" aria-label="Fechar">×</button>
@@ -142,7 +137,7 @@
     <dt>O botão de baixar está desativado.</dt><dd>Algum campo obrigatório está faltando ou há datas incoerentes. A mensagem abaixo da prévia mostra o que falta.</dd>
     <dt>Não encontrei o cemitério ou velório.</dt><dd>Use “local não cadastrado” e preencha os dados. Avise o Marketing para incluirmos o local na lista.</dd>
     <dt>O nome ficou pequeno na arte.</dt><dd>Nomes muito longos são reduzidos automaticamente para caber. Se preferir, use o nome como a família costuma chamar.</dd>
-    <dt>A foto ficou cortada.</dt><dd>Arraste a foto na prévia e ajuste o zoom. O enquadramento vale para os três formatos.</dd>
+    <dt>A foto ficou cortada.</dt><dd>Arraste a foto na prévia e ajuste o zoom.</dd>
   </dl>
 </div></div>
 <div class="modal" id="mContato" role="dialog" aria-modal="true"><div class="box"><button class="x" type="button" aria-label="Fechar">×</button>
@@ -153,6 +148,7 @@
 
 <script src="js/config.js"></script>
 <script src="js/logo-data.js"></script>
+<script src="js/modelos.js"></script>
 <script src="js/locais.js"></script>
 <script src="js/app.js"></script>
 </body>

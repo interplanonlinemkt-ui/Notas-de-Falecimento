@@ -1,19 +1,13 @@
 # Gerador de Comunicado de Despedida · Interplan
 
-Ferramenta interna da Interplan para gerar a arte de comunicado de falecimento sempre no padrão da marca. A pessoa envia a foto e preenche os dados, e o sistema gera a arte em três formatos:
-
-| Formato | Tamanho |
-|---|---|
-| Feed | 1080 × 1350 px |
-| Story | 1080 × 1920 px |
-| Horizontal | 1200 × 628 px |
+Ferramenta interna da Interplan para gerar a arte de comunicado de falecimento sempre no padrão da marca. A pessoa envia a foto (ou escolhe uma imagem padrão) e preenche os dados, e o sistema gera a arte no formato **story (1080 × 1920 px)**.
 
 ## Como usar
 
-1. Envie a foto e ajuste o enquadramento arrastando a imagem na prévia (há controle de zoom e opção de preto e branco).
+1. Envie a foto e ajuste o enquadramento arrastando a imagem na prévia (há controle de zoom e opção de preto e branco). Sem foto da pessoa, escolha uma **imagem padrão**: rosa branca, vela, céu, folhagem ou ursinho.
 2. Preencha o nome e as datas de nascimento e falecimento.
 3. Escolha o local do velório e do sepultamento na lista. Se o local não estiver cadastrado, use **“local não cadastrado”** e digite nome, endereço e cidade.
-4. Confira a prévia nas três abas e clique em **Baixar os 3 formatos (.zip)**, ou baixe só o formato aberto em PNG/JPG.
+4. Confira a prévia e clique em **Baixar story (PNG)** ou **JPG**.
 
 ## Estrutura
 
@@ -22,9 +16,10 @@ index.html            página (formulário, prévia, navbar e rodapé)
 css/style.css         estilos da interface
 js/config.js          links das redes sociais do rodapé (editar aqui)
 js/logo-data.js       logo embutido usado na arte (canvas)
+js/modelos.js         imagens padrão (rosa, vela, céu, folhagem, ursinho) embutidas
 js/locais.js          lista de velórios e cemitérios (gerada a partir do CSV)
 js/app.js             lógica: formulário, busca de locais, desenho das artes e download
-assets/               logos
+assets/               logos e assets/modelos/ (originais das imagens padrão)
 data/locais.csv       mapeamento de velórios e cemitérios (fonte da lista)
 scripts/gerar_locais.py  converte data/locais.csv em js/locais.js
 ```
@@ -62,7 +57,6 @@ No repositório: **Settings → Pages → Build and deployment → Deploy from a
 ## Dependências externas (CDN)
 
 - Google Fonts: Montserrat (interface) e Yellowtail (nome na arte)
-- JSZip 3.10.1 (cdnjs), para o download dos três formatos em .zip
 
 ---
 Dúvidas, sugestões ou evoluções: departamento de Marketing · WhatsApp (18) 99733-0972

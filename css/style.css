@@ -115,3 +115,12 @@ button{font:inherit;font-weight:600;border-radius:8px;padding:11px 18px;cursor:p
 .fallback.on{display:block}
 .fallback img{max-width:260px;width:100%;border:1px solid var(--line)}
 .fallback p{font-size:12.5px;color:var(--muted)}
+
+/* Imagens padrão */
+.modelos-label{font-size:12px;font-weight:500;color:var(--muted);margin:12px 0 6px}
+.modelos{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.modelo{padding:0;border:2px solid transparent;border-radius:10px;background:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:4px;font:inherit;font-size:11px;font-weight:500;color:var(--muted)}
+.modelo img{width:100%;aspect-ratio:9/10;object-fit:cover;border-radius:50%/45%;border:2px solid var(--gold);display:block}
+.modelo:hover img{filter:brightness(1.05)}
+.modelo[aria-pressed=true]{color:var(--green)}
+.modelo[aria-pressed=true] img{outline:3px solid var(--green);outline-offset:2px}

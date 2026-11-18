@@ -9,47 +9,25 @@
 
   // ---- Layouts (one per format) ----
   const LAYOUTS = {
-    feed: {
-      label: 'feed', w: 1080, h: 1350,
-      top:  { x: 540, y: 96, size: 20 },
-      oval: { cx: 540, cy: 360, rx: 196, ry: 219, b: 12 },
-      head: { x: 540, y: [636, 664], size: 23 },
-      name: { x: 540, y: 755, size: 78, min: 40, maxW: 820 },
-      dates:{ y: 826, size: 33, left: 356, right: 696, s: 1 },
-      div:  { x: 540, y: 884, h: 210 },
-      cols: { left: 300, right: 780, titleY: 894, titleSize: 23, lineY: 946, size: 20, min: 15, maxW: 400, maxLines: 7 },
-      footer: { y: 1131, logoW: 422 },
-    },
     story: {
       label: 'story', w: 1080, h: 1920,
-      top:  { x: 540, y: 212, size: 25 },
-      oval: { cx: 540, cy: 540, rx: 240, ry: 268, b: 14 },
-      head: { x: 540, y: [906, 942], size: 29 },
-      name: { x: 540, y: 1052, size: 98, min: 48, maxW: 920 },
-      dates:{ y: 1152, size: 41, left: 335, right: 735, s: 1.25 },
-      div:  { x: 540, y: 1228, h: 262 },
-      cols: { left: 290, right: 790, titleY: 1243, titleSize: 29, lineY: 1310, size: 25, min: 18, maxW: 440, maxLines: 7 },
-      // logo acima da área de resposta do Instagram; ~100 px de respiro entre o texto e a faixa verde
+      top:  { x: 540, y: 140, size: 25 },
+      oval: { cx: 540, cy: 466, rx: 240, ry: 268, b: 14 },
+      head: { x: 540, y: [832, 868], size: 29 },
+      name: { x: 540, y: 978, size: 98, min: 48, maxW: 920 },
+      dates:{ y: 1078, size: 41, left: 335, right: 735, s: 1.25 },
+      div:  { x: 540, y: 1154, h: 300 },
+      cols: { left: 290, right: 790, titleY: 1169, titleSize: 29, lineY: 1236, size: 26, min: 18, maxW: 440, maxLines: 7 },
+      // logo acima da área de resposta do Instagram
       footer: { y: 1590, logoW: 460, logoCY: 1700 },
     },
-    wide: {
-      label: 'horizontal', w: 1200, h: 628,
-      top:  { x: 800, y: 56, size: 16 },
-      oval: { cx: 235, cy: 270, rx: 150, ry: 168, b: 9 },
-      head: { x: 800, y: [100, 124], size: 18 },
-      name: { x: 800, y: 205, size: 62, min: 30, maxW: 690 },
-      dates:{ y: 280, size: 26, left: 650, right: 950, s: 0.78 },
-      div:  { x: 800, y: 320, h: 195 },
-      cols: { left: 622, right: 978, titleY: 330, titleSize: 18, lineY: 368, size: 15, min: 12, maxW: 330, maxLines: 7 },
-      footer: { y: 540, logoW: 250 },
-    },
   };
-  const FORMATS = ['feed', 'story', 'wide'];
+  const FORMATS = ['story'];
 
   const $ = id => document.getElementById(id);
   const cv = $('cv');
   const logo = new Image(); logo.src = window.LOGO_BRANCO_DATA || 'assets/logo-branco.png';
-  let current = 'feed';
+  const current = 'story';
 
   // Photo state — offsets are stored relative to the oval size so framing carries across formats
   let photo = null, zoom = 1, offNX = 0, offNY = 0;
@@ -314,14 +292,14 @@
     if (n && f && f < n) e.textContent = 'A data de falecimento é anterior à de nascimento.';
     else if (f && val('velData') && val('velData') < f) e.textContent = 'A data do velório é anterior à do falecimento.';
     const missing = [];
-    if (!photo) missing.push('foto');
+    if (!photo) missing.push('foto ou imagem padrão');
     if (!val('nome')) missing.push('nome');
     if (!n || !f) missing.push('datas');
     if (!velPicker.complete() || !val('velData') || !val('velIni')) missing.push('velório');
     const sepOk = $('mesmoLocal').checked ? velPicker.complete() : sepPicker.complete();
     if (!sepOk || !val('sepData') || !val('sepHora')) missing.push('sepultamento');
     const ok = !missing.length && !e.textContent;
-    ['btnAll','btnPng','btnJpg'].forEach(id => $(id).disabled = !ok);
+    ['btnPng','btnJpg'].forEach(id => $(id).disabled = !ok);
     setStatus(ok ? '' : (e.textContent ? 'Corrija as datas para baixar.' : 'Falta preencher: ' + missing.join(', ') + '.'));
     return ok;
   }
@@ -329,25 +307,32 @@
   const velPicker = createPicker($('velPicker'), ['velorio', 'ambos'], 'Buscar velório por nome ou cidade…');
   const sepPicker = createPicker($('sepPicker'), ['cemiterio', 'ambos'], 'Buscar cemitério por nome ou cidade…');
 
-  // ---- Tabs ----
-  document.querySelectorAll('.tab').forEach(t => t.addEventListener('click', () => {
-    current = t.dataset.fmt;
-    document.querySelectorAll('.tab').forEach(x => x.setAttribute('aria-selected', x === t ? 'true' : 'false'));
-    refresh();
-  }));
-
   // ---- Photo upload ----
   const dropDefault = $('drop').innerHTML;
-  function loadFile(f){
-    if (!f || !f.type.startsWith('image/')) { setStatus('Envie um arquivo de imagem (JPG ou PNG).', true); return; }
+  function usePhoto(src, label, modeloId){
     const img = new Image();
     img.onload = () => {
       photo = img; zoom = 1; offNX = 0; offNY = 0; $('zoom').value = 1;
       $('photoTools').classList.add('on'); cv.classList.add('draggable');
-      $('drop').innerHTML = '<strong>Trocar foto</strong> · ' + f.name.replace(/[<>&]/g, '');
+      $('drop').innerHTML = modeloId ? dropDefault : '<strong>Trocar foto</strong> · ' + label.replace(/[<>&]/g, '');
+      document.querySelectorAll('.modelo').forEach(m => m.setAttribute('aria-pressed', m.dataset.id === modeloId ? 'true' : 'false'));
       refresh();
     };
-    img.src = URL.createObjectURL(f);
+    img.src = src;
+  }
+  function loadFile(f){
+    if (!f || !f.type.startsWith('image/')) { setStatus('Envie um arquivo de imagem (JPG ou PNG).', true); return; }
+    usePhoto(URL.createObjectURL(f), f.name, null);
+  }
+  // Imagens padrão (objetos) para quando não houver foto da pessoa — js/modelos.js
+  const MODELOS = window.MODELOS_FOTO || [];
+  const grid = $('modelos');
+  if (grid) {
+    grid.innerHTML = MODELOS.map(m => `<button type="button" class="modelo" data-id="${m.id}" aria-pressed="false" title="${m.nome}"><img src="${m.src}" alt=""><span>${m.nome}</span></button>`).join('');
+    grid.addEventListener('click', e => {
+      const b = e.target.closest('.modelo'); if (!b) return;
+      const m = MODELOS.find(x => x.id === b.dataset.id); if (m) usePhoto(m.src, m.nome, m.id);
+    });
   }
   $('drop').onclick = () => $('file').click();
   $('drop').onkeydown = e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); $('file').click(); } };
@@ -395,6 +380,7 @@
     $('mesmoLocal').checked = false; $('sepPickerWrap').hidden = false; $('pb').checked = false;
     velPicker.reset(); sepPicker.reset();
     photo = null; $('photoTools').classList.remove('on'); cv.classList.remove('draggable');
+    document.querySelectorAll('.modelo').forEach(m => m.setAttribute('aria-pressed', 'false'));
     $('drop').innerHTML = dropDefault; $('fallback').classList.remove('on'); refresh();
   };
 
@@ -432,25 +418,9 @@
     if (!validate()) return;
     const mime = ext === 'jpg' ? 'image/jpeg' : 'image/png';
     const c = renderOff(current);
-    const name = `${baseName()}-${LAYOUTS[current].label}-${LAYOUTS[current].w}x${LAYOUTS[current].h}.${ext}`;
+    const name = `${baseName()}-story-1080x1920.${ext}`;
     if (!(await save(name, await toBlob(c, mime)))) showFallback([c]);
   }
-  async function exportAll(){
-    if (!validate()) return;
-    const canvases = FORMATS.map(renderOff);
-    if (window.JSZip){
-      setStatus('Gerando os 3 formatos…');
-      const zip = new JSZip();
-      for (let i = 0; i < FORMATS.length; i++){
-        const L = LAYOUTS[FORMATS[i]];
-        zip.file(`${baseName()}-${L.label}-${L.w}x${L.h}.png`, await toBlob(canvases[i], 'image/png'));
-      }
-      const blob = await zip.generateAsync({ type: 'blob' });
-      if (await save(`${baseName()}.zip`, blob)) return;
-    }
-    showFallback(canvases);
-  }
-  $('btnAll').onclick = exportAll;
   $('btnPng').onclick = () => exportOne('png');
   $('btnJpg').onclick = () => exportOne('jpg');
 
