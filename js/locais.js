@@ -1466,11 +1466,20 @@ window.LOCAIS = [
   {
     "cidade": "Sandovalina",
     "uf": "SP",
+    "nome": "Velório Municipal de Sandovalina",
+    "tipo": "velorio",
+    "endereco": "Av. Pref. João Borges Frias, 1435 - Centro",
+    "cep": "19250-000",
+    "obs": "Informado pelo Marketing"
+  },
+  {
+    "cidade": "Sandovalina",
+    "uf": "SP",
     "nome": "Cemitério Municipal de Sandovalina",
     "tipo": "cemiterio",
-    "endereco": "",
-    "cep": "",
-    "obs": "Fonte: Google Maps — conferir"
+    "endereco": "Av. Damásio Ferreira Bento",
+    "cep": "19250-000",
+    "obs": "Informado pelo Marketing"
   },
   {
     "cidade": "Santa Mercedes",
