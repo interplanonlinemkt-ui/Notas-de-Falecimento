@@ -124,3 +124,6 @@ button{font:inherit;font-weight:600;border-radius:8px;padding:11px 18px;cursor:p
 .modelo:hover img{filter:brightness(1.05)}
 .modelo[aria-pressed=true]{color:var(--green)}
 .modelo[aria-pressed=true] img{outline:3px solid var(--green);outline-offset:2px}
+
+/* Campo desativado (ex.: horário a definir) */
+input:disabled{background:#f1f3f1;color:#9aa29b;cursor:not-allowed}

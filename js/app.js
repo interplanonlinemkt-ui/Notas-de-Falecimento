@@ -57,7 +57,8 @@
     return lines;
   }
   function data(){
-    const velHora = val('velIni') ? (val('velFim') ? `${fmtHora(val('velIni'))} ÀS ${fmtHora(val('velFim'))}` : `A PARTIR DAS ${fmtHora(val('velIni'))}`) : '';
+    const velHora = val('velIni') ? `A PARTIR DAS ${fmtHora(val('velIni'))}` : '';
+    const sepHora = $('sepADefinir').checked ? 'HORÁRIO A DEFINIR' : (val('sepHora') ? `ÀS ${fmtHora(val('sepHora'))}` : '');
     const velLoc = velPicker.get();
     const sepLoc = $('mesmoLocal').checked ? velLoc : sepPicker.get();
     return {
@@ -65,7 +66,7 @@
       nasc: txt(fmtCurta(val('nasc')), 'DD/MM/AAAA'),
       falec: txt(fmtCurta(val('falec')), 'DD/MM/AAAA'),
       vel: [...locLines(velLoc, 'Local do velório'), txt(fmtLonga(val('velData')), 'Data'), txt(velHora, 'Horário')],
-      sep: [...locLines(sepLoc, 'Local do sepultamento'), txt(fmtLonga(val('sepData')), 'Data'), txt(val('sepHora') ? `ÀS ${fmtHora(val('sepHora'))}` : '', 'Horário')],
+      sep: [...locLines(sepLoc, 'Local do sepultamento'), txt(fmtLonga(val('sepData')), 'Data'), txt(sepHora, 'Horário')],
     };
   }
 
@@ -297,7 +298,7 @@
     if (!n || !f) missing.push('datas');
     if (!velPicker.complete() || !val('velData') || !val('velIni')) missing.push('velório');
     const sepOk = $('mesmoLocal').checked ? velPicker.complete() : sepPicker.complete();
-    if (!sepOk || !val('sepData') || !val('sepHora')) missing.push('sepultamento');
+    if (!sepOk || !val('sepData') || (!val('sepHora') && !$('sepADefinir').checked)) missing.push('sepultamento');
     const ok = !missing.length && !e.textContent;
     ['btnPng','btnJpg'].forEach(id => $(id).disabled = !ok);
     setStatus(ok ? '' : (e.textContent ? 'Corrija as datas para baixar.' : 'Falta preencher: ' + missing.join(', ') + '.'));
@@ -373,11 +374,13 @@
   // ---- Inputs ----
   document.querySelectorAll('input:not([type=file]):not([type=range])').forEach(i => i.addEventListener('input', refresh));
   $('mesmoLocal').addEventListener('change', () => { $('sepPickerWrap').hidden = $('mesmoLocal').checked; refresh(); });
+  $('sepADefinir').addEventListener('change', () => { $('sepHora').disabled = $('sepADefinir').checked; if ($('sepADefinir').checked) $('sepHora').value = ''; refresh(); });
   $('velData').addEventListener('change', () => { if (!val('sepData')) { $('sepData').value = val('velData'); refresh(); } });
 
   $('btnLimpar').onclick = () => {
     document.querySelectorAll('input[type=text],input[type=date],input[type=time]').forEach(i => i.value = '');
     $('mesmoLocal').checked = false; $('sepPickerWrap').hidden = false; $('pb').checked = false;
+    $('sepADefinir').checked = false; $('sepHora').disabled = false;
     velPicker.reset(); sepPicker.reset();
     photo = null; $('photoTools').classList.remove('on'); cv.classList.remove('draggable');
     document.querySelectorAll('.modelo').forEach(m => m.setAttribute('aria-pressed', 'false'));
